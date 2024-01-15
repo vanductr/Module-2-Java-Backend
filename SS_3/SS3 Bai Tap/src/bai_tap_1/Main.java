@@ -14,14 +14,18 @@ public class Main {
         int x = input.nextInt();
 
         // Bước 4: Thực hiện xoá phần tử x khỏi mảng.
+        // Tạo 1 mảng mới có độ dài ngắn hơn mảng ban đầu
+        int[] newArray = new int[myArray.length - 1];
+        int newArrayIndex = 0;
         for (int i = 0; i < myArray.length; i++) {
-            if (myArray[i] == x) {
-                myArray[i] = 10;
+            if (myArray[i] != x) {
+                newArray[newArrayIndex] = myArray[i];
+                newArrayIndex++;
             }
         }
+        myArray = newArray;
 
         // Bước 5: Kết thúc duyệt mảng, in mảng ra.
-        System.out.println("Danh sách mới được thay từ " + x + " thành " + 10);
         System.out.println("Đây là mảng mới: " + Arrays.toString(myArray));
     }
 }

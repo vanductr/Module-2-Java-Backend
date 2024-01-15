@@ -42,8 +42,9 @@ public class Main {
                     editStudent(students, studentCount);
                     break;
                 case 4:
-                    deleteStudent(students, studentCount);
+//                    deleteStudent(students, studentCount);
 //                    studentCount--;
+                    studentCount = deleteStudent(students, studentCount);
                     break;
                 case 0:
                     System.out.println("Thoát chương trình.");
@@ -117,7 +118,7 @@ public class Main {
                 System.out.println("Thông tin học sinh cần xoá:");
                 students[i].displayData();
 
-                for (int j = 0; j < studentCount - 1; j++) {
+                for (int j = i; j < studentCount - 1; j++) {
                     students[j] = students[j + 1];
                 }
 
