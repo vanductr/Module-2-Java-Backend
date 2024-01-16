@@ -1,4 +1,4 @@
-package baitap1;
+package baitap1; // Xây dựng lớp hình tròn.
 
 public class Circle {
     // Khai báo các thuộc tính

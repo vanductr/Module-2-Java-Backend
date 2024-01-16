@@ -23,6 +23,7 @@ public class Employee {
         calSalary();
     }
 
+    // Lấy dữ liệu nhập vào
     public void inputData() {
         Scanner scanner = new Scanner(System.in);
 
@@ -46,6 +47,7 @@ public class Employee {
         calSalary();
     }
 
+    // Hiển thị thông tin nhân viên
     public void displayData() {
         System.out.println("Mã nhân viên: " + this.employeeId);
         System.out.println("Tên nhân viên: " + this.employeeName);
@@ -55,6 +57,7 @@ public class Employee {
         System.out.println("Lương: " + this.salary);
     }
 
+    // Phương thức tính lương
     public void calSalary() {
         this.salary = this.rate * 1300000;
     }

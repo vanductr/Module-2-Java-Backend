@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Access-Modify/Access-Modify.iml" filepath="$PROJECT_DIR$/Access-Modify/Access-Modify.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Bien-va-phuong-thuc-static/Bien-va-phuong-thuc-static.iml" filepath="$PROJECT_DIR$/Bien-va-phuong-thuc-static/Bien-va-phuong-thuc-static.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Calculator/Calculator.iml" filepath="$PROJECT_DIR$/Calculator/Calculator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Caregory-Product/Caregory-Product.iml" filepath="$PROJECT_DIR$/Caregory-Product/Caregory-Product.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Rectangle/Rectangle.iml" filepath="$PROJECT_DIR$/Rectangle/Rectangle.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Static Method/Static Method.iml" filepath="$PROJECT_DIR$/Static Method/Static Method.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Static Properties/Static Properties.iml" filepath="$PROJECT_DIR$/Static Properties/Static Properties.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Student/Student.iml" filepath="$PROJECT_DIR$/Student/Student.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Thuc Hanh.iml" filepath="$PROJECT_DIR$/.idea/Thuc Hanh.iml" />
+    </modules>
+  </component>
+</project>

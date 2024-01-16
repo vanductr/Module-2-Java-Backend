@@ -1,4 +1,4 @@
-package baitap3;
+package baitap3; // Xây dựng lớp StopWatch
 
 public class StopWatch {
     // Khai báo 1 biến thành viên trong lớp 'StopWatch' với kiểu dữ liệu là 'long'
