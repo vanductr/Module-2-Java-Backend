@@ -3,7 +3,7 @@ package baitap14;
 public class WordCount {
     public static void main(String[] args) {
         // Chuỗi cần kiểm tra
-        String text = "This is a sample sentence with some words.";
+        String text = "VĐV tiếp tục tố \"vùng tối\" ở nơi rèn luyện tuyển thủ quốc gia";
 
         // Số lượng từ có độ dài lớn hơn hoặc bằng giá trị cho trước
         int minLength = 4;
@@ -15,7 +15,7 @@ public class WordCount {
 
     public static int countWords(String text, int minLength) {
         // Chia chuỗi thành các từ
-        String[] words = text.split("\\s+");
+        String[] words = text.split("\\s+"); // \\s+ là biểu thức chính quy của khoảng trắng(space)
 
         // Đếm số lượng từ có độ dài lớn hơn hoặc bằng giá trị cho trước
         int count = 0;

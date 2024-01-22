@@ -1,7 +1,8 @@
 package baitap13;
 
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
+// Gói java.util.regex cung cấp các lớp và phương thức để thực hiện so khớp chuỗi sử dụng biểu thức chính quy.
+import java.util.regex.Matcher; // import Class Matcher từ hệ thống mặc định của Java
+import java.util.regex.Pattern; // import Class Pattern từ hệ thống mặc định của Java
 
 public class EmailValidation {
     public static void main(String[] args) {
@@ -23,7 +24,7 @@ public class EmailValidation {
         // Biểu thức chính quy kiểm tra địa chỉ email
         String emailRegex = "^[a-zA-Z0-9_+&*-]+(?:\\.[a-zA-Z0-9_+&*-]+)*@(?:[a-zA-Z0-9-]+\\.)+[a-zA-Z]{2,7}$";
 
-        // Tạo Pattern object
+        // Tạo 1 đối tượng của lớp 'Pattern' từ biểu thức chính quy(regex) được đưa vào thông qua biến 'emailRegex'
         Pattern pattern = Pattern.compile(emailRegex);
 
         // Tạo Matcher object
