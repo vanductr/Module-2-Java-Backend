@@ -260,4 +260,30 @@ public class ClassesService {
             System.out.println("Không tìm thấy Lớp học có tên: " + className);
         }
     }
+
+    // Phương thức sửa thông tin lớp học
+    public static void updateClassesInfo(Scanner scanner) {
+        System.out.println();
+        System.out.print("Nhập ID của Lớp học bạn muốn sửa: ");
+        int classesId = scanner.nextInt();
+        scanner.nextLine(); // Tránh nuốt dòng
+
+        boolean found = false;
+        for (Classes classes : classesList) {
+            if (classes.getClassId() == classesId) {
+                System.out.println("Đây là thông tin của lớp học cần chỉnh sửa:");
+                classes.displayData();
+                System.out.println("-------------------------");
+
+                System.out.println("Nhập thông tin mới của Lớp học:");
+                classes.inputData();
+                System.out.println();
+                System.out.println("Đã cập nhật thành công thông tin Lớp học.");
+                found = true;
+            }
+        }
+        if (!found) {
+            System.out.println("Không tìm thấy Lớp học nào có Id: " + classesId);
+        }
+    }
 }

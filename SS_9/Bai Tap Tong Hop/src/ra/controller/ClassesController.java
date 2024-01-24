@@ -31,6 +31,7 @@ public class ClassesController {
                     ClassesService.addNewClass();
                     break;
                 case 3:
+                    ClassesService.updateClassesInfo(scanner);
                     break;
                 case 4:
                     ClassesService.changeClassStatusById();
