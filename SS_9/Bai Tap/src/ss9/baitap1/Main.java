@@ -59,10 +59,8 @@ public class Main {
 
 
         // Tạo 1 mảng các đối tượng hình học
-        Shape[] shapesArray = new Shape[3];
-        shapesArray[0] = new Circle(5);
-        shapesArray[1] = new Rectangle(5, 5);
-        shapesArray[2] = new Square(4);
+        Shape[] shapesArray = new Shape[]{circle, rectangle, square};
+
 
 
         // Hiển thị diện tích của mỗi đối tượng trong mảng
@@ -74,6 +72,10 @@ public class Main {
                 Colorable colorable = (Colorable) shape1;
                 colorable.howToColor();
             }
+
+            ((Resizeable) shape1).resize(2.0);
+
+            System.out.println(shape1);
         }
 
     }
