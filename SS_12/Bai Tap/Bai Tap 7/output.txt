@@ -1,0 +1,5 @@
+Alice | Female | 01/05/1990
+Diana | Female | 05/08/1988
+Eva | Female | 10/02/1995
+Bob | Male | 15/03/1985
+Charlie | Male | 20/11/1992
