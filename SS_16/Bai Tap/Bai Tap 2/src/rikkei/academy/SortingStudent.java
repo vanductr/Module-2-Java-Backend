@@ -17,7 +17,8 @@ public class SortingStudent {
     public static void main(String[] args) {
         Students[] studentsList1 = insertionSort(studentsList);
         Students[] studentsList2 = selectionSort(studentsList);
-        displayStudentInfo(studentsList2);
+        Students[] studentsList3 = bubbleSort(studentsList);
+        displayStudentInfo(studentsList3);
     }
 
     private static void displayStudentInfo(Students[] studentsList) {
@@ -66,7 +67,16 @@ public class SortingStudent {
 
     // Phương thức sắp xếp kiểu: Nổi bọt
     private static Students[] bubbleSort(Students[] students) {
-
+        for (int i = 1; i < students.length; i++) {
+            for (int j = 0; j < students.length - 1; j++) {
+                if (students[j].getScore() < students[j + 1].getScore()) {
+                    Students temp = students[j];
+                    students[j] = students[j + 1];
+                    students[j + 1] = temp;
+                }
+            }
+        }
+        return students;
     }
 }
 
